@@ -72,14 +72,12 @@
 
 ![17](image/17.png)
 
-18. Tampilan Git UI
-
 ## Konfigurasi Git
 
 1. Buka Git Bash. Cari melalui start kemudian ketik Git, pilih Git Bash.
 2. Ketikkan `$ git config --global user.name *nama user github*`. Kemudian klik enter.
 
-3. ketikkan `$ git config --global user.email *emailanda@gmail.com*`. KKemudian klik enter.
+3. ketikkan `$ git config --global user.email *emailanda@gmail.com*`. Kemudian klik enter.
 
 4. Untuk melihat konfigurasi yang sudah ada ketikkan `$ git config --list`. Kemudian klik enter.
 
@@ -94,3 +92,59 @@
 ![19](image/19.png)
 
 3. Klik `create repository`.
+
+### Membuat Clone
+
+1. Buka komputer lokal dan pilih tempat tujuan penyimpanan Repo.
+
+2. klik kanan di tempat yang kosong kemudian pilih *Git Bash Here* 
+
+![20](image/20.png)
+
+3. Setelah itu ketikkan perintah `$ git clone https://github.com/echajessica/01-git-github.git` kemudian enter dan akan muncul seperti ini.
+
+![21](image/21.png)
+
+4. Selanjutnya akan muncul folder yang sama dengan repository yang sudah dibuat.
+
+![22](image/22.png)
+
+### Membuat File di Dalam Repo
+
+1. Klik kanan folder hasil clone tadi dan pilih *git bash here*.
+
+![23](image/23.png)
+
+2. Setelah itu buat file README.md menggunakan perintah `$ echo " # 01-git-github " >> README.md`
+
+![24](image/24.png)
+
+3. Jika berhasil, file README.md akan muncul di dalam folder yang telah dibuat
+
+4. Gunakan perintah `$ git init` untuk melakukan inisialisasi dalam direktori
+
+5. Kemudian ketikkan `$ git add README.md` untuk membuat file README.md
+
+6. Lanjut dengan perintah `$ git commit -m "first commit"` untuk memberikan informasi update.
+
+7. Selanjutnya tuliskan perintah `$ git branch -M main` untuk membuat perubahan git lokal karena tadi masih menggunakan istilah master.
+
+8. Langkah selanjutnya adalah mengetikkan perintah `$ git remote add origin https://github.com/echajessica/01-git-github.git` yang berfungsi untuk mengupload file yang sudah di buat di dalam komputer.
+
+9. Ketikkan `$ git push -u origin main` untuk upload ke github, kemudian klik enter.
+
+10. Buka file README.md kemudian edit isinya.
+
+### Mengupload File
+
+1. Untuk upload file yang sudah diedit tadi gunakan perintah `$ git status` untuk melihat status file tersebut. Sebelumnya klik kanan pada folder yang berisi file README.md tersebut kemudian klik *Git Bush Here*
+
+2. Gunakan perintah `$ git add README.md`
+
+3. Cek statusnya kembali dengan `$ git status` 
+
+4. Setelah semuanya langkahnya terpenuhi, gunakan perintah `$ git commit -m "first commit"` untuk membuat deskripsi atau informasi terkait file yang diupload atau diupdate.
+
+5. Untuk mengupload atau mengupdatenya gunakan perintah `$ git push`
+
+6. Refresh akun github dan file yang diupload tadi otomatis sudah masuk ke github.
